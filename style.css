@@ -7,6 +7,10 @@ body {
 h1 {
     color: #2a2128;
 }
+
+h2 {
+    color: #9b9988;
+}
   
 @media (prefers-color-scheme: dark) {
     body {
