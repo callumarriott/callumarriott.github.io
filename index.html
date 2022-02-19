@@ -8,15 +8,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-        <script src="/index.js"></script>
     </head>
     <body>
         <header id="header">
             <div class="header-top">
                 <nav>
                     <ul>
-                        <li><button type="about-button">About Me</button></li>
-                        <li><button type="contact-button">Contact Me</button></li>
+                        <li><div id="about-link">About Me</div></li>
+                        <li><div id="contact-link">Contact Me</div></li>
                     </ul>
                 </nav>
             </div>
@@ -55,5 +54,19 @@
         <div id="contact-me">
             <h2>Contact Me</h2>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            $("about-link").click(function(){
+                $('html, body').animate({
+                    scrollTop: $("#about-me").offset().top},
+                1000);
+            });
+
+            $("contact-link").click(function(){
+                $('html, body').animate({
+                    scrollTop: $("#contact-me").offset().top},
+                1000);
+            });
+        </script>
     </body>
 </html>
