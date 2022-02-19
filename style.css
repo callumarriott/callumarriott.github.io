@@ -10,7 +10,12 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     color: #9b9988;
+}
+
+h3 {
+    text-align: left;
 }
   
 @media (prefers-color-scheme: dark) {
@@ -23,3 +28,48 @@ h2 {
         color: #f4f5f4;
     }
   }
+
+.left, .right {
+    float: left;
+    width: 20%;
+}
+  
+.main {
+    float: left;
+    width: 60%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.left-column, .right-column {
+    display: inline;
+    font-size: large;
+    font-weight: bold;
+    flex: 0 1 45%;
+}
+
+#header {
+    height: 100vh;
+}
+
+.header-container {
+    margin: auto auto;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -80%)
+}
+
+.header-content {
+    font-family: 'Rubik', sans-serif;
+}
