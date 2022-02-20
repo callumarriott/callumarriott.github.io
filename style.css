@@ -11,7 +11,7 @@ body {
 h1 {
     text-align: center;
     color: #2a2128;
-    font-size: 300%;
+    font-size: 56px;
 }
 
 h2 {
@@ -50,16 +50,6 @@ a {
     }
   }
 
-.left, .right {
-    float: left;
-    width: 20%;
-}
-  
-.main {
-    float: left;
-    width: 60%;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -95,15 +85,11 @@ a {
     width: 80%;
     position: relative;
     top: calc(50% - 100px);
-    transform: translateY(-80%)
+    transform: translateY(-100%)
 }
 
 .header-content {
     font-family: 'Rubik', sans-serif;
-}
-
-.header-title {
-    line-height: 40px;
 }
 
 .zoom {
