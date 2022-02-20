@@ -41,8 +41,8 @@ nav {
     background-color: #567a98;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-clip-path: polygon(0 0, 700px 0, 0 400px, 0 0);
-    clip-path: polygon(0 0, 700px 0, 0 400px, 0 0);
+    -webkit-clip-path: polygon(0 0, 70% 0, 0 calc(0.4 * 100vw), 0 0);
+    clip-path: polygon(0 0, 70% 0, 0 calc(0.4 * 100vw), 0 0);
 }
 
 .header-top {
@@ -88,6 +88,17 @@ nav {
 
 .header-surname {
     transform: translateX(72px);
+}
+
+@media screen and (max-width: 600px){
+    .header-content {
+        width: 200px;
+        transform: translateX(36px)
+    }
+
+    .header-firstname, .header-surname {
+        font-size: 48px;
+    }
 }
 
 .header-info {
