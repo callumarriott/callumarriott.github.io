@@ -16,14 +16,6 @@ body {
 nav {
     flex: 1 1 0%;
 }
-
-a {
-    text-decoration: none;
-    color: #e6e9e7;
-    background-color: #567a98;
-    padding: 5px;
-    border-radius: 5px;
-}
   
 @media (prefers-color-scheme: dark) {
     body {
@@ -61,9 +53,17 @@ a {
 }
 
 .header-list {
-    display: inline-block;
+    display: block;
     float: right;
     margin-right: 12px;
+}
+
+.list-item {
+    text-decoration: none;
+    color: #e6e9e7;
+    background-color: #567a98;
+    padding: 8px;
+    border-radius: 3px;
 }
 
 .header-container {
@@ -75,7 +75,8 @@ a {
 }
 
 .header-content {
-    text-align: center;
+    width: 400px;
+    margin: auto;
 }
 
 .header-firstname, .header-surname {
@@ -102,8 +103,8 @@ a {
 }
 
 .zoom:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
 }
 
 #main {
