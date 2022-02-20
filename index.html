@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Callum Marriott</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,66 +10,70 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header id="header">
-            <div class="header-shape"></div>
-            <div class="header-top">
-                <nav>
-                    <ul>
-                        <li class="header-list zoom"><a href="#contact-me">Contact Me</a></li>
-                        <li class="header-list zoom"><a href="#about-me">About Me</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-container">
-                <div class="header-firstname">Callum</div>
-                <div class="header-surname">Marriott.</div>
-                <div class="header-line">Software Developer and Computer Science Undergraduate</div>
-            </div>
-        </header>
-        <div id="about-me">
-            <h2>About Me</h2>
-        </div>
-        <div id="main">
-            <div class="main-container">
-                <div class="left-column">
-                    <h3>Experience</h3>
-                    <ul>
-                        <li>
-                            <h4>Experience 1</h4>
-                            <p>I did experience 1 here and I learnt this</p>
-                        </li>
-                        <li>
-                            <h4>Experience 2</h4>
-                            <p>I did experience 2 here and I learnt this</p>
-                        </li>
-                    </ul>
+        <div id="wrapper">
+            <header id="header">
+                <div class="header-shape"></div>
+                <div class="header-top">
+                    <nav>
+                        <ul>
+                            <li class="header-list zoom"><a href="#contact-me">Contact Me</a></li>
+                            <li class="header-list zoom"><a href="#about-me">About Me</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="right-column">
-                    <h3>Education</h3>
-                    <ul>
-                        <h4>Education 1</h4>
-                        <h4>Education 2</h4>
-                    </ul>
+                <div class="header-container">
+                    <div class="header-firstname">Callum</div>
+                    <div class="header-surname">Marriott.</div>
+                    <div class="header-info">Software Developer and Computer Science Undergraduate</div>
                 </div>
-            </div>
-            <div id="contact-me">
-                <h2>Contact Me</h2>
-            </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('a').on('click', function(event){
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({scrollTop: $(hash).offset().top}, 900);
-                });
+            </header>
+            <main id="main">
+                <div id="about-me">
+                    <div class="main-title">About Me.</div>
+                </div>
+                <div class="main-container">
+                    <div class="left-column">
+                        <div class="column-title">Experience</div>
+                        <ul>
+                            <li>
+                                <div class="column-subtitle">Experience 1</div>
+                            </li>
+                            <li>
+                                <div class="column-subtitle">Experience 2</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-column">
+                        <div class="column-title">Education</div>
+                        <ul>
+                            <li>
+                                <div class="column-subtitle">Education 1</div>
+                            </li>
+                            <li>
+                                <div class="column-subtitle">Education 2</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="contact-me">
+                    <div class="main-title">Contact Me.</div>
+                </div>
+            </main>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('a').on('click', function(event){
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({scrollTop: $(hash).offset().top}, 900);
+                    });
 
-                window.onbeforeunload = function(){
-                    window.scrollTo(0, 0)
-                    document.getElementById
-                };
-            });
-        </script>
+                    window.onbeforeunload = function(){
+                        window.scrollTo(0, 0)
+                        document.getElementById
+                    };
+                });
+            </script>
+        </div>
     </body>
 </html>
