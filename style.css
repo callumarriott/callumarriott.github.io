@@ -48,7 +48,7 @@ nav {
 @media screen and (max-height: 900px){
     .header-shape {
         -webkit-clip-path: polygon(0 0, 60% 0, 0 calc(0.35 * 100vw), 0 0);
-    clip-path: polygon(0 0, 60% 0, 0 calc(0.35 * 100vw), 0 0);
+        clip-path: polygon(0 0, 60% 0, 0 calc(0.35 * 100vw), 0 0);
     }
 }
 
@@ -63,6 +63,13 @@ nav {
     display: block;
     float: right;
     margin-right: 12px;
+}
+
+@media screen and (max-width: 500px){
+    .header-list{
+        margin-bottom: 24px;
+        clear: both;
+    }
 }
 
 .list-item {
